@@ -42,7 +42,9 @@ What's New in Revive Adserver 3.0.5
  Non-Backwards Compatible Changes
  --------------------------------
 
- * None
+ * The adRender hook function signature was missing the $richMedia argument before
+   $loc and $referer. Please make sure you double check your custom plugins in
+   case they use such hook.
 
 
 System Requirements
