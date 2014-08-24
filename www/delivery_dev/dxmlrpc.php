@@ -17,7 +17,7 @@ require_once '../../init-delivery.php';
 require_once(MAX_PATH . '/lib/OA/Dal/Delivery/' . strtolower($conf['database']['type']) . '.php');
 
 // Require the XMLRPC classes
-require_once 'XML/RPC/Server.php';
+require_once MAX_PATH . '/lib/max/Delivery/XML-RPC.php';
 
 // function to handle the XML-RPC upgrade check request
 $server = new XML_RPC_Server(array(
